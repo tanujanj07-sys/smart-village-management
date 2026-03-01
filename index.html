@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Village Management System - Kolhapur</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#667eea">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>🌟 Smart Village Portal</h1>
+            <p>One-Click Access to All Government Services - Kolhapur</p>
+            <div class="status-bar">
+                <span id="online-status">🟢 Online</span>
+                <span id="location">📍 Kolhapur</span>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="nav-bar">
+            <button class="nav-btn active" data-page="home">🏠 Home</button>
+            <button class="nav-btn" data-page="farm">🌾 Farming</button>
+            <button class="nav-btn" data-page="health">🏥 Health</button>
+            <button class="nav-btn" data-page="study">📚 Study</button>
+            <button class="nav-btn" data-page="schemes">🏛️ Schemes</button>
+            <button class="nav-btn" data-page="community">👥 Community</button>
+            <button class="nav-btn" data-page="grievance">📢 Complaints</button>
+            <button class="nav-btn" data-page="waste">♻️ Clean Village</button>
+        </div>
+
+        <!-- CONTENT AREA -->
+        <div class="content-area">
+            <!-- HOME PAGE -->
+            <div id="home" class="page active">
+                <h2>🚀 Welcome to Digital Village</h2>
+                <p>Get instant access to farming tips, health services, education & government schemes</p>
+                <div class="service-grid">
+                    <div class="service-card" data-detail="welcome">
+                        <span class="icon">🎯</span>
+                        <div>Quick Start Guide</div>
+                    </div>
+                    <div class="service-card" data-detail="emergency">
+                        <span class="icon">🚨</span>
+                        <div>Emergency Contacts</div>
+                    </div>
+                    <div class="service-card" data-detail="services">
+                        <span class="icon">✅</span>
+                        <div>All Services</div>
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="feature">⚡ Live Weather</div>
+                    <div class="feature">📱 Works Offline</div>
+                    <div class="feature">🎤 Voice Ready</div>
+                    <div class="feature">📊 15+ Schemes</div>
+                    <div class="feature">📱 PWA Install</div>
+                </div>
+            </div>
+
+            <!-- FARMING PAGE -->
+            <div id="farm" class="page">
+                <h2>🌾 Smart Farming Hub</h2>
+                <div class="service-grid">
+                    <div class="service-card" data-detail="weather">
+                        <span class="icon">🌦</span> Live Weather
+                    </div>
+                    <div class="service-card" data-detail="crops">
+                        <span class="icon">🌱</span> Best Crops
+                    </div>
+                    <div class="service-card" data-detail="market">
+                        <span class="icon">💰</span> Market Rates
+                    </div>
+                    <div class="service-card" data-detail="scheme-farm">
+                        <span class="icon">🏛️</span> Farmer Schemes
+                    </div>
+                    <div class="service-card" data-detail="tips">
+                        <span class="icon">💡</span> Expert Tips
+                    </div>
+                </div>
+            </div>
+
+            <!-- HEALTH PAGE -->
+            <div id="health" class="page">
+                <h2>🏥 Health Services</h2>
+                <div class="service-grid">
+                    <div class="service-card" data-detail="doctor">
+                        <span class="icon">👨‍⚕️</span> Find Doctor
+                    </div>
+                    <div class="service-card" data-detail="ambulance">
+                        <span class="icon">🚑</span> Ambulance 108
+                    </div>
+                    <div class="service-card" data-detail="vaccine">
+                        <span class="icon">💉</span> Vaccination
+                    </div>
+                    <div class="service-card" data-detail="pharmacy">
+                        <span class="icon">💊</span> Medicine List
+                    </div>
+                </div>
+            </div>
+
+            <!-- STUDY PAGE -->
+            <div id="study" class="page">
+                <h2>📚 Education Portal</h2>
+                <div class="service-grid">
+                    <div class="service-card" data-detail="school">
+                        <span class="icon">🏫</span> School Info
+                    </div>
+                    <div class="service-card" data-detail="scholarship">
+                        <span class="icon">💰</span> Scholarships
+                    </div>
+                    <div class="service-card" data-detail="videos">
+                        <span class="icon">📹</span> Study Videos
+                    </div>
+                    <div class="service-card" data-detail="exam">
+                        <span class="icon">📅</span> Exam Dates
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCHEMES PAGE - FULLY EXPANDED -->
+            <div id="schemes" class="page">
+                <h2>🏛️ Government Schemes (15+)</h2>
+                <div class="scheme-tabs">
+                    <button class="tab-btn active" data-tab="rural">🌾 Farmer</button>
+                    <button class="tab-btn" data-tab="machinery">🚜 Machinery</button>
+                    <button class="tab-btn" data-tab="digital">💻 Digital</button>
+                    <button class="tab-btn" data-tab="women">👩 Women</button>
+                </div>
+                
+                <!-- FARMER TAB -->
+                <div class="tab-content active" id="rural-tab">
+                    <div class="service-grid">
+                        <div class="service-card" data-detail="pmkisan">💰 PM-KISAN</div>
+                        <div class="service-card" data-detail="pmawas">🏠 PMAY-Gramin</div>
+                        <div class="service-card" data-detail="mnrega">⚒️ MGNREGA</div>
+                        <div class="service-card" data-detail="agristack">🌾 AgriStack ID</div>
+                        <div class="service-card" data-detail="punjabrao">💸 Punjabrao</div>
+                        <div class="service-card" data-detail="ambedkar">👨‍🌾 Ambedkar</div>
+                        <div class="service-card" data-detail="saurvahini">☀️ Solar Pump</div>
+                        <div class="service-card" data-detail="cropinsure">🛡️ Insurance</div>
+                        <div class="service-card" data-detail="seedsub">🌱 Seed Sub</div>
+                    </div>
+                </div>
+
+                <!-- MACHINERY TAB -->
+                <div class="tab-content" id="machinery-tab">
+                    <div class="service-grid">
+                        <div class="service-card" data-detail="maha-mech">🚜 Agri Machinery</div>
+                        <div class="service-card" data-detail="tractor-sub">🚜 Tractor Sub</div>
+                    </div>
+                </div>
+
+                <!-- DIGITAL TAB -->
+                <div class="tab-content" id="digital-tab">
+                    <div class="service-grid">
+                        <div class="service-card" data-detail="pmgdisha">📱 PMGDISHA</div>
+                        <div class="service-card" data-detail="bharatnet">🌐 BharatNet</div>
+                    </div>
+                </div>
+
+                <!-- WOMEN TAB -->
+                <div class="tab-content" id="women-tab">
+                    <div class="service-grid">
+                        <div class="service-card" data-detail="pmuy">🪔 PM Ujjwala</div>
+                        <div class="service-card" data-detail="lakhpati">💼 Lakhpati Didi</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMMUNITY PAGE -->
+            <div id="community" class="page">
+                <h2>👥 Local Directory</h2>
+                <div class="service-grid">
+                    <div class="service-card" data-detail="shops">
+                        <span class="icon">🏪</span> Nearby Shops
+                    </div>
+                    <div class="service-card" data-detail="mechanics">
+                        <span class="icon">🔧</span> Mechanics
+                    </div>
+                    <div class="service-card" data-detail="electrician">
+                        <span class="icon">💡</span> Electricians
+                    </div>
+                    <div class="service-card" data-detail="panchayat">
+                        <span class="icon">🏛️</span> Gram Panchayat
+                    </div>
+                    <div class="service-card" data-detail="apmc">
+                        <span class="icon">🌾</span> APMC Office
+                    </div>
+                </div>
+            </div>
+
+            <!-- GRIEVANCE PAGE -->
+            <div id="grievance" class="page">
+                <h2>📢 Lodge Complaint</h2>
+                <div class="grievance-form">
+                    <div class="form-group">
+                        <label>Issue Type:</label>
+                        <select id="issue-type">
+                            <option>Water Supply</option>
+                            <option>Road Repair</option>
+                            <option>Electricity</option>
+                            <option>Street Light</option>
+                            <option>Garbage</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Description:</label>
+                        <textarea id="issue-desc" placeholder="Describe your issue..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Location:</label>
+                        <input type="text" id="issue-location" placeholder="Your location or landmark">
+                    </div>
+                    <button class="submit-btn" id="submitGrievanceBtn">📤 Submit Complaint</button>
+                    <div id="grievance-status"></div>
+                </div>
+                <h3 style="margin-top: 40px;">Your Recent Complaints</h3>
+                <div id="complaints-list"></div>
+            </div>
+
+            <!-- WASTE MANAGEMENT PAGE -->
+            <div id="waste" class="page">
+                <h2>♻️ Clean Village</h2>
+                <div class="service-grid">
+                    <div class="service-card" data-detail="bin-locations">
+                        <span class="icon">📍</span> Bin Locations
+                    </div>
+                    <div class="service-card" data-detail="schedule">
+                        <span class="icon">📅</span> Collection Schedule
+                    </div>
+                    <div class="service-card" data-detail="compost">
+                        <span class="icon">🌱</span> Composting Guide
+                    </div>
+                    <div class="service-card" data-detail="recycle">
+                        <span class="icon">🔄</span> Recycling Tips
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <button class="floating-action" id="voiceBtn">🎤</button>
+    <button class="floating-action install-btn" id="installBtn" style="display: none;">📱</button>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">×</span>
+            <div id="modal-text">Click any card to see details...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
